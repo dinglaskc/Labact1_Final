@@ -203,7 +203,7 @@ namespace Labact1_Final
             var fees = CalculateFees(currentRecord);
             string receipt = BuildReceipt(currentRecord, fees);
 
-            // Display in listView1 (the receipt display area in groupBox6)
+          
             listView1.Clear();
             listView1.View = View.Details;
             listView1.Columns.Add("Parking Receipt", listView1.Width - 4, HorizontalAlignment.Left);
@@ -225,13 +225,11 @@ namespace Labact1_Final
             comboBox2.SelectedIndex = 0;
             listView1.Clear();
 
-            // Current Transaction value labels
             label6.Text  = "\u2014";   // Plate Number value
             label7.Text  = "\u2014";   // Vehicle Info value
             label9.Text  = "\u2014";   // Duration value
             label11.Text = "\u2014";   // Overtime Fee value
 
-            // Fee Calculation value labels
             label19.Text = "\u2014";   // Standard Fee value
             label17.Text = "\u2014";   // Service Charge value
             label15.Text = "\u2014";   // Total value
